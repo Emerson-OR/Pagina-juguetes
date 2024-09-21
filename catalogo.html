@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Juguetes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .container h2 {
+            text-align: center;
+            color: #ff6347;
+            font-size: 2em;
+        }
+
+        .toy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .toy-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .toy-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .toy-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .toy-info {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .toy-info h2 {
+            color: #333;
+            margin: 0;
+            font-size: 1.8em;
+        }
+
+        .toy-info p {
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .price {
+            color: #28a745;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .details-link {
+            background-color: #ff6347;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .details-link:hover {
+            background-color: #e55342;
+        }
+
+        .back-button {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Catálogo de Juguetes</h1>
+    </header>
+
+    <!-- Contenido principal -->
+    <div class="container">
+        <h2>¡Los mejores juguetes para la diversión de los niños!</h2>
+
+        <div class="toy-grid">
+            <!-- Tarjeta de Juguete 1 -->
+            <div class="toy-card">
+                <img src="Img/Control Todoterreno Remoto Coche.jpg" alt="Juguete 1">
+                <div class="toy-info">
+                    <h2>Juguete control remoto</h2>
+                    <p>Disfruta de la aventura con este carro todoterreno control remoto, ideal para explorar cualquier terreno y realizar acrobacias.</p>
+                    <p class="price">$170.779</p>
+                    <a href="Terraneitor.html" class="details-link">Ver Detalles</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta de Juguete 2 -->
+            <div class="toy-card">
+                <img src="Img/estrella de la muerte.jpg" alt="Juguete 2">
+                <div class="toy-info">
+                    <h2>Juguete armable lego</h2>
+                    <p>Construye y explora la temida Estrella de la Muerte de Star Wars, con minifiguras y detalles que recrean escenas épicas.</p>
+                    <p class="price">$230.000</p>
+                    <a href="EstrellaMuerte.html" class="details-link">Ver Detalles</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta de Juguete 3 -->
+            <div class="toy-card">
+                <img src="Img/pistola-nerf.jpg" alt="Juguete 3">
+                <div class="toy-info">
+                    <h2>Juguete pistola nerf</h2>
+                    <p>Sumérgete en la acción con la pistola Nerf SPNKr, inspirada en Halo, perfecta para emocionantes batallas con amigos.</p>
+                    <p class="price">$415.000</p>
+                    <a href="PistolaNerf.html" class="details-link">Ver Detalles</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botón para volver a la página principal -->
+        <a href="index.html" class="back-button">Volver a la Página Principal</a>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Promoción de Juguetes. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
